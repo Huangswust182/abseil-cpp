@@ -182,20 +182,6 @@ absl_cc_test(
 
 absl_cc_library(
   NAME
-    leak_check
-  HDRS
-    "leak_check.h"
-  SRCS
-    "leak_check.cc"
-  COPTS
-    ${ABSL_DEFAULT_COPTS}
-  DEPS
-    absl::core_headers
-  PUBLIC
-)
-
-absl_cc_library(
-  NAME
     leak_check_disable
   SRCS
     "leak_check_disable.cc"
